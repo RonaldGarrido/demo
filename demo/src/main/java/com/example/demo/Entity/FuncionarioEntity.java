@@ -7,8 +7,9 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name = "Editor")
-public class EditorEntity extends UsuarioEntity{
-    @Column(name = "especialidad",length = 50)
-    private String especialidad;
+@Table(name = "Funcionario")
+public class FuncionarioEntity extends UsuarioEntity{
+    @Column(name = "unidad",length = 20)
+    private String unidad;
+
 }
