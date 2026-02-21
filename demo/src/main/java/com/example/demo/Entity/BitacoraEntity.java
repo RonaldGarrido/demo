@@ -11,7 +11,7 @@ public class BitacoraEntity extends UsuarioEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idBitacora",length = 20)
-    private int idBitacora;
+    private Integer idBitacora;
 
     @Column(name = "fecha",length = 15)
     private Date fecha;

@@ -9,7 +9,7 @@ public class ReporteEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idReporte",length = 20)
-    private int idReporte;
+    private Integer idReporte;
 
     @Column(name = "fechaGeneracion",length = 15)
     private String fechaGeneracion;

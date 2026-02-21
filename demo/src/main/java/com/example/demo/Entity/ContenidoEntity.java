@@ -13,7 +13,7 @@ import java.sql.Date;
 public class ContenidoEntity {
     @Id
     @Column(name = "idContenido",length = 20)
-    private int idContenido;
+    private Integer idContenido;
 
     @Column(name = "titulo",length = 30)
     private String titulo;

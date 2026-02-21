@@ -12,7 +12,7 @@ import lombok.Data;
 public class UsuarioEntity {
     @Id
     @Column(name = "idUsuario", length = 100)
-    private int idUsuario;
+    private Integer idUsuario;
 
     @Column(name = "nombre",length = 100)
     private String nombre;

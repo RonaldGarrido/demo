@@ -1,4 +1,7 @@
 package com.example.demo.Repository;
 
-public interface GestorRepository {
+import com.example.demo.Entity.GestorEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface GestorRepository extends JpaRepository<GestorEntity,Integer> {
 }

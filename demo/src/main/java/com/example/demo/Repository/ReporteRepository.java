@@ -1,4 +1,7 @@
 package com.example.demo.Repository;
 
-public interface ReporteRepository {
+import com.example.demo.Entity.ReporteEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ReporteRepository extends JpaRepository<ReporteEntity,Integer> {
 }
