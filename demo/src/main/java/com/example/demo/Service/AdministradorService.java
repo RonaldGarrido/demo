@@ -24,7 +24,7 @@ public class AdministradorService {
     public List<AdministradorEntity> getAdministradores() {
         return administradorRepo.findAll();
     }
-    public Optional<AdministradorEntity> getAdministrador(Integer IdUsuario) {
+    public Optional<AdministradorEntity> getAdministradorById(Integer IdUsuario) {
         return administradorRepo.findById(IdUsuario);
     }
     public AdministradorEntity updateAdministrador(AdministradorEntity administrador) {

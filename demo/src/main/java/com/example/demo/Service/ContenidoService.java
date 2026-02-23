@@ -16,7 +16,7 @@ public class ContenidoService {
     public ContenidoService(ContenidoRepository contenidoRepo) {
         this.contenidoRepo = contenidoRepo;
     }
-    public ContenidoEntity getContenido(Integer id) {
+    public ContenidoEntity getContenidoById(Integer id) {
         return contenidoRepo.findById(id).get();
     }
     public List<ContenidoEntity> getAllContenidos() {

@@ -12,8 +12,9 @@ public class EditorService {
     public EditorService(EditorRepository editorRepo) {
         this.editorRepo = editorRepo;
     }
-    public void save(EditorEntity editor) {
+    public EditorEntity save(EditorEntity editor) {
         editorRepo.save(editor);
+        return editor;
     }
     public EditorEntity getEditor(Integer id) {
         return (EditorEntity) editorRepo.findAll();
