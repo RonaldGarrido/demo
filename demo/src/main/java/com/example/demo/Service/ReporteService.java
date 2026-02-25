@@ -12,4 +12,9 @@ public class ReporteService {
         this.reporteRepo = reporteRepo;
     }
 
+    public ReporteRepository getReporteRepo() {
+        return reporteRepo;
+    }
+
+
 }

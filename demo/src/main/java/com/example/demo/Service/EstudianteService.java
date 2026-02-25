@@ -12,4 +12,9 @@ public class EstudianteService {
     public EstudianteService(EstudianteRepository estudianteRepo) {
         this.estudianteRepo = estudianteRepo;
     }
+
+    public EstudianteRepository getEstudiante() {
+        return estudianteRepo;
+    }
+
 }

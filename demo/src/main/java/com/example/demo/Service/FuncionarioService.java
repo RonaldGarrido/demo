@@ -5,11 +5,21 @@ import com.example.demo.Repository.FuncionarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class FuncionarioService {
     private FuncionarioRepository funcionarioRepository;
     @Autowired
     public FuncionarioService(FuncionarioRepository funcionarioRepository) {
         this.funcionarioRepository = funcionarioRepository;
+    }
+
+    public List<FuncionarioEntity> getAllFuncionarios() {
+        return funcionarioRepository.findAll();
+    }
+
+    public FuncionarioEntity saveFuncionario(FuncionarioEntity funcionario) {
+        return funcionarioRepository.save(funcionario);
     }
 }

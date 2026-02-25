@@ -12,4 +12,9 @@ public class GestorService {
         this.gestorRepo = gestorRepository;
     }
 
+    public GestorRepository getGestorRepo() {
+        return gestorRepo;
+    }
+
+
 }

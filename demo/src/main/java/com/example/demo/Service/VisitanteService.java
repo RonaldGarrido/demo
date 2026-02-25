@@ -12,4 +12,11 @@ public class VisitanteService {
         this.visitanteRepo = visitanteRepo;
     }
 
+    public VisitanteRepository getVisitanteRepo() {
+        return visitanteRepo;
+    }
+    public void setVisitanteRepo(VisitanteRepository visitanteRepo) {
+        this.visitanteRepo = visitanteRepo;
+
+    }
 }

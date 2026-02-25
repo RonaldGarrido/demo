@@ -12,4 +12,7 @@ public class OperadorService {
         this.operadorRepo = operadorRepo;
     }
 
+    public OperadorRepository getOperadorRepo() {
+        return operadorRepo;
+    }
 }
